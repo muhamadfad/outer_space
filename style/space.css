@@ -12,6 +12,20 @@ html {
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Sembunyikan scrollbar untuk IE, Edge dan Firefox */
+body {
+    -ms-overflow-style: none;
+    /* IE dan Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+a{
+    text-decoration: none;
+}
 
 @media screen and (max-width:600px){
     
@@ -67,7 +81,7 @@ html {
         }
     
         .meteorfire1 img {
-            width: 100px;
+            width: 70px;
         }
     
         .meteorfire2 {
@@ -75,6 +89,9 @@ html {
             position: absolute;
             top: 100px;
             left: 10px;
+        }
+        .meteorfire2 img{
+            width: 50px;
         }
     
         .mid {
@@ -96,12 +113,12 @@ html {
         .ufoplane {
             z-index: 2;
             position: absolute;
-            top: 10px;
-            left: 10px;
+            bottom: 70px;
+            left: 80px;
         }
     
         .ufoplane img {
-            width: 100px;
+            width: 80px;
         }
     
         .batumeteor {
@@ -119,8 +136,11 @@ html {
         .planet1 {
             z-index: 2;
             position: absolute;
-            bottom: 0;
-            left: -40px;
+            bottom: 140px;
+            left: 10px;
+        }
+        .planet1 img,.planet2 img{
+            width: 80px;
         }
     
         .planet2 {
@@ -133,19 +153,19 @@ html {
         .satelit2 {
             z-index: 5;
             position: absolute;
-            bottom: 100px;
+            bottom: 80px;
             right: 10px;
         }
     
         .satelit1 {
             z-index: 2;
             position: absolute;
-            bottom: 50px;
-            left: 10px;
+            top: 40px;
+            left: 60px;
         }
     
-        .satelit1 img {
-            width: 150px;
+        .satelit1 img,.satelit2 img{
+            width: 60px;
         }
     
     
@@ -166,11 +186,12 @@ html {
             text-align: justify;
     
         }
+       
     
         .box_text p {
             position: relative;
             margin-bottom: 10px;
-            font-size: 17px;
+            font-size: 14px;
             z-index: 2;
         }
     
@@ -179,7 +200,7 @@ html {
             z-index: 2;
             color: rgb(16, 5, 94);
             margin-bottom: 30px;
-            font-size: 40px;
+            font-size: 20px;
     
     
         }
@@ -191,6 +212,7 @@ html {
             -moz-border-radius: 20px;
             -ms-border-radius: 20px;
             -o-border-radius: 20px;
+            height: 200px;
         }
     
     
@@ -226,62 +248,10 @@ html {
         .container3 h1 {
             color: white;
             text-align: center;
+            font-size: 20px;
         }
     
-    
-    
-    
-        /* lets go button */
-    
-        .lets_button {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            z-index: 4;
-            bottom: 20px;
-        }
-    
-        button {
-            display: flex;
-            align-items: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: 500;
-            font-size: 17px;
-            padding: 0.8em 1.3em 0.8em 0.9em;
-            color: white;
-            background: #ad5389;
-            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-            border: none;
-            letter-spacing: 0.05em;
-            border-radius: 16px;
-        }
-    
-        button svg {
-            margin-right: 3px;
-            transform: rotate(30deg);
-            transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-            -webkit-transform: rotate(30deg);
-            -moz-transform: rotate(30deg);
-            -ms-transform: rotate(30deg);
-            -o-transform: rotate(30deg);
-        }
-    
-        button span {
-            transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-        }
-    
-        button:hover svg {
-            transform: translateX(5px) rotate(180deg);
-            -webkit-transform: translateX(5px) rotate(180deg);
-            -moz-transform: translateX(5px) rotate(180deg);
-            -ms-transform: translateX(5px) rotate(180deg);
-            -o-transform: translateX(5px) rotate(180deg);
-        }
-    
-        button:hover span {
-            transform: translateX(7px);
-        }
+
     
 }
 
@@ -502,56 +472,57 @@ html {
     
     
     
-        /* lets go button */
-    
-        .lets_button {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            z-index: 4;
-            bottom: 20px;
-        }
-    
-        button {
-            display: flex;
-            align-items: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: 500;
-            font-size: 17px;
-            padding: 0.8em 1.3em 0.8em 0.9em;
-            color: white;
-            background: #ad5389;
-            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-            border: none;
-            letter-spacing: 0.05em;
-            border-radius: 16px;
-        }
-    
-        button svg {
-            margin-right: 3px;
-            transform: rotate(30deg);
-            transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-            -webkit-transform: rotate(30deg);
-            -moz-transform: rotate(30deg);
-            -ms-transform: rotate(30deg);
-            -o-transform: rotate(30deg);
-        }
-    
-        button span {
-            transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-        }
-    
-        button:hover svg {
-            transform: translateX(5px) rotate(180deg);
-            -webkit-transform: translateX(5px) rotate(180deg);
-            -moz-transform: translateX(5px) rotate(180deg);
-            -ms-transform: translateX(5px) rotate(180deg);
-            -o-transform: translateX(5px) rotate(180deg);
-        }
-    
-        button:hover span {
-            transform: translateX(7px);
-        }
-    
+          
 }
+
+ /* lets go button */
+
+ .lets_button {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     position: absolute;
+     z-index: 4;
+     bottom: 20px;
+ }
+
+ button {
+     display: flex;
+     align-items: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 500;
+     font-size: 17px;
+     padding: 0.8em 1.3em 0.8em 0.9em;
+     color: white;
+     background: #ad5389;
+     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+     border: none;
+     letter-spacing: 0.05em;
+     border-radius: 16px;
+ }
+
+ button svg {
+     margin-right: 3px;
+     transform: rotate(30deg);
+     transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+     -webkit-transform: rotate(30deg);
+     -moz-transform: rotate(30deg);
+     -ms-transform: rotate(30deg);
+     -o-transform: rotate(30deg);
+ }
+
+ button span {
+     transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+ }
+
+ button:hover svg {
+     transform: translateX(5px) rotate(180deg);
+     -webkit-transform: translateX(5px) rotate(180deg);
+     -moz-transform: translateX(5px) rotate(180deg);
+     -ms-transform: translateX(5px) rotate(180deg);
+     -o-transform: translateX(5px) rotate(180deg);
+ }
+
+ button:hover span {
+     transform: translateX(7px);
+ }
