@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media screen and (max-width:600px){
+    
+    .container {
+            background-image: linear-gradient(180deg, rgba(213, 141, 207, 1), rgb(3, 11, 68));
+          
+            height: 800px;
+            overflow-x: hidden;
+            
+
+           
+        }
+    
+        .navbar {
+            z-index: 5;
+            width: 100%;
+            top: 0;
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0);
+            padding: 10px;
+            backdrop-filter: blur(20px);
+            border-bottom: 0.5px rgb(249, 180, 255) solid;
+        }
+    
+        .navbar p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    
+        .start {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            color: white;
+            z-index: 4;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            width: 100%;
+            height: 650px;
+        }
+    
+        .meteorfire1 {
+            z-index: 2;
+            position: absolute;
+            top: 50px;
+            right:50px;
+        }
+    
+        .meteorfire1 img {
+            width: 100px;
+        }
+    
+        .meteorfire2 {
+            z-index: 2;
+            position: absolute;
+            top: 100px;
+            left: 10px;
+        }
+    
+        .mid {
+            z-index: 3;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 100%;
+            height: 650px;
+           
+        }
+    
+        .mid img {
+            width: 300px
+        }
+    
+        .ufoplane {
+            z-index: 2;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    
+        .ufoplane img {
+            width: 100px;
+        }
+    
+        .batumeteor {
+            z-index: 2;
+            position: absolute;
+            top: 300px;
+            left: 10px;
+    
+        }
+    
+        .batumeteor img {
+            width: 70px;
+        }
+    
+        .planet1 {
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            left: -40px;
+        }
+    
+        .planet2 {
+            z-index: 2;
+            position: absolute;
+            top: 100px;
+            right: 0px;
+        }
+    
+        .satelit2 {
+            z-index: 5;
+            position: absolute;
+            bottom: 100px;
+            right: 10px;
+        }
+    
+        .satelit1 {
+            z-index: 2;
+            position: absolute;
+            bottom: 50px;
+            left: 10px;
+        }
+    
+        .satelit1 img {
+            width: 150px;
+        }
+    
+    
+        .container2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            background: url(../assets/landing_page/bg_container2\(3\).jpg);
+            background-size: cover;
+            background-position: center;
+    
+        }
+    
+        .box_text {
+            color: white;
+
+            text-align: justify;
+    
+        }
+    
+        .box_text p {
+            position: relative;
+            margin-bottom: 10px;
+            font-size: 17px;
+            z-index: 2;
+        }
+    
+        .box_text h1 {
+            position: relative;
+            z-index: 2;
+            color: rgb(16, 5, 94);
+            margin-bottom: 30px;
+            font-size: 40px;
+    
+    
+        }
+    
+        .box_text iframe {
+            width: 100%;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+    
+    
+    
+    
+        .images {
+            position: absolute;
+            left: 2%;
+        }
+    
+        .images2 {
+            position: absolute;
+            right: 10px;
+            margin-top: 1200px;
+    
+        }
+    
+        .images img,
+        .images2 img {
+            width: 200px;
+        }
+    
+    
+        .container3 {
+            padding: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url(../assets/landing_page/bg_container2.jpg);
+            height: 650px;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .container3 h1 {
+            color: white;
+            text-align: center;
+        }
+    
+    
+    
+    
+        /* lets go button */
+    
+        .lets_button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            z-index: 4;
+            bottom: 20px;
+        }
+    
+        button {
+            display: flex;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            padding: 0.8em 1.3em 0.8em 0.9em;
+            color: white;
+            background: #ad5389;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            border: none;
+            letter-spacing: 0.05em;
+            border-radius: 16px;
+        }
+    
+        button svg {
+            margin-right: 3px;
+            transform: rotate(30deg);
+            transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+            -webkit-transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            -o-transform: rotate(30deg);
+        }
+    
+        button span {
+            transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+    
+        button:hover svg {
+            transform: translateX(5px) rotate(180deg);
+            -webkit-transform: translateX(5px) rotate(180deg);
+            -moz-transform: translateX(5px) rotate(180deg);
+            -ms-transform: translateX(5px) rotate(180deg);
+            -o-transform: translateX(5px) rotate(180deg);
+        }
+    
+        button:hover span {
+            transform: translateX(7px);
+        }
+    
+}
+
+@media screen and (min-width:980px){
+    .container {
+            background-image: linear-gradient(180deg, rgba(213, 141, 207, 1), rgb(3, 11, 68));
+            width: 100%;
+            height: 650px;
+        }
+    
+        .navbar {
+            z-index: 5;
+            width: 100%;
+            top: 0;
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0);
+            padding: 10px;
+            backdrop-filter: blur(20px);
+            border-bottom: 0.5px rgb(249, 180, 255) solid;
+        }
+    
+        .navbar p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    
+        .start {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            color: white;
+            z-index: 3;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            width: 100%;
+            height: 650px;
+        }
+    
+        .meteorfire1 {
+            z-index: 2;
+            position: absolute;
+            top: 50px;
+            right: 300px;
+        }
+    
+        .meteorfire1 img {
+            width: 200px;
+        }
+    
+        .meteorfire2 {
+            z-index: 2;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+    
+        .mid {
+            z-index: 1;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 100%;
+            height: 650px;
+        }
+    
+        .mid img {
+            width: 400px
+        }
+    
+        .ufoplane {
+            z-index: 2;
+            position: absolute;
+            top: 10px;
+            left: 300px;
+        }
+    
+        .ufoplane img {
+            width: 100px;
+        }
+    
+        .batumeteor {
+            z-index: 2;
+            position: absolute;
+            top: 300px;
+            left: 300px;
+    
+        }
+    
+        .batumeteor img {
+            width: 70px;
+        }
+    
+        .planet1 {
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            left: -30px;
+        }
+    
+        .planet2 {
+            z-index: 2;
+            position: absolute;
+            top: 100px;
+            right: 30px;
+        }
+    
+        .satelit2 {
+            z-index: 5;
+            position: absolute;
+            bottom: 100px;
+            right: 300px;
+        }
+    
+        .satelit1 {
+            z-index: 2;
+            position: absolute;
+            bottom: 50px;
+            left: 300px;
+        }
+    
+        .satelit1 img {
+            width: 150px;
+        }
+    
+    
+        .container2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+    
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background: url(../assets/landing_page/bg_container2\(3\).jpg);
+            background-size: cover;
+            background-position: center;
+    
+        }
+    
+        .box_text {
+            color: white;
+            width: 700px;
+    
+            margin: 50px;
+            padding: 20px;
+            text-align: justify;
+    
+        }
+    
+        .box_text p {
+            position: relative;
+            margin-bottom: 10px;
+            font-size: 17px;
+            z-index: 2;
+        }
+    
+        .box_text h1 {
+            position: relative;
+            z-index: 2;
+            color: rgb(16, 5, 94);
+            margin-bottom: 30px;
+            font-size: 40px;
+    
+    
+        }
+    
+        .box_text iframe {
+            width: 100%;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+    
+    
+    
+    
+        .images {
+            position: absolute;
+            left: 15%;
+        }
+    
+        .images2 {
+            position: absolute;
+            right: 180px;
+            margin-top: 1200px;
+    
+        }
+    
+        .images img,
+        .images2 img {
+            width: 200px;
+        }
+    
+    
+        .container3 {
+            padding: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url(../assets/landing_page/bg_container2.jpg);
+            height: 650px;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .container3 h1 {
+            color: white;
+            text-align: center;
+        }
+    
+    
+    
+    
+        /* lets go button */
+    
+        .lets_button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            z-index: 4;
+            bottom: 20px;
+        }
+    
+        button {
+            display: flex;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            padding: 0.8em 1.3em 0.8em 0.9em;
+            color: white;
+            background: #ad5389;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            border: none;
+            letter-spacing: 0.05em;
+            border-radius: 16px;
+        }
+    
+        button svg {
+            margin-right: 3px;
+            transform: rotate(30deg);
+            transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+            -webkit-transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            -o-transform: rotate(30deg);
+        }
+    
+        button span {
+            transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+    
+        button:hover svg {
+            transform: translateX(5px) rotate(180deg);
+            -webkit-transform: translateX(5px) rotate(180deg);
+            -moz-transform: translateX(5px) rotate(180deg);
+            -ms-transform: translateX(5px) rotate(180deg);
+            -o-transform: translateX(5px) rotate(180deg);
+        }
+    
+        button:hover span {
+            transform: translateX(7px);
+        }
+    
+}
