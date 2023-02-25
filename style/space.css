@@ -27,8 +27,9 @@ a{
     text-decoration: none;
 }
 
+
 @media screen and (max-width:600px){
-    
+   
     .container {
             background-image: linear-gradient(180deg, rgba(213, 141, 207, 1), rgb(3, 11, 68));
           
@@ -482,9 +483,11 @@ a{
      display: flex;
      justify-content: center;
      position: absolute;
-     z-index: 4;
+     z-index: 5;
      bottom: 20px;
+     
  }
+
 
  button {
      display: flex;
